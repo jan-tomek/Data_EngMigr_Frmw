@@ -5,20 +5,31 @@ metadata and mapping specifications. This approach is particularly beneficial
 for developing transformations targeting wide tables, as it guarantees that
 the generated code consistently aligns with the target table's structure.
 
-## ExecTool
+## Exec Tool
 
 Tools to execute generated code.
 
-## MetaTools
+### Code Runner
+
+Windows batch files to parametrize and execute generated code. Dependencies implemented as waves, 
+scripts in each wave executed without order (alphabetically by name) and waves in defined order 1,2,3... 
+
+### Excel Loader
+
+Loads Excel files into database. Two modes:
+* Lookup - for each Excel file is created one table based on file name a loaded one sheet into
+* Manual - for each sheet in Excel file is created table and loaded, file name is ignored  
+
+## Meta Tools
 
 Tool to work with metadata repository and generate code.
 
-### CodeGenerator
+### Code Generator
 
 Generate SQL based on table structure from **Metadata store** and mapping from **Mapping Excel**.
 
 Mapping Excel contains sheet for each table (SELECT ...) and one sheet for all "table mappings", 
-parts that generated sql use to create query FROM. 
+parts that generated SQL use to create query FROM. 
 
 | Name            | Description                         | Sample                                                                                    |
 |-----------------|-------------------------------------|-------------------------------------------------------------------------------------------|

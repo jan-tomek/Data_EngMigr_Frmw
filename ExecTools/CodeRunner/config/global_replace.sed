@@ -1,0 +1,7 @@
+s/CZ_Meta/XXMeta/gi
+s/CZ_STG/XXSTG/gi
+s/CZ_IN_MAN/XXIN_MAN/gi
+s/CZ_IN_MAP/XXWRK/gi
+s/CZ_WRK/XXWRK/gi
+s/CZ_OUT/XXOUT/gi
+s/CZ_OUT_LKP/XXOUT_LKP/gi
